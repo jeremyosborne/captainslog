@@ -79,8 +79,8 @@ module.exports = (env, argv) => {
       ],
     },
     output: {
-      chunkFilename: '[name].chunk.js',
-      filename: '[name].js',
+      chunkFilename: 'captainslog-[name].chunk.js',
+      filename: 'captainslog-[name].js',
       path: path.resolve(ROOT_DIR, 'docs'),
       // If you change this, you better check the HTML template hrefs for anything
       // that assumes publicPath to be what it is, like the site-header.
