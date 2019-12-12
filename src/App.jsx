@@ -1,3 +1,4 @@
+import Dashboard from 'Dashboard'
 import React from 'react'
 
 //
@@ -8,7 +9,7 @@ import React from 'react'
 //
 export const App = () => {
   return (
-    <h1>It works!</h1>
+    <Dashboard />
   )
 }
 

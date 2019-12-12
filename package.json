@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "simple journal",
   "private": "true",
+  "main": "src/index.js",
   "scripts": {
     "clean": "del docs/*",
     "build": "npm run clean && NODE_PATH=src BUILD_TYPE=production webpack",
@@ -23,7 +24,10 @@
     "url": "git+https://github.com/jeremyosborne/captainslog.git"
   },
   "dependencies": {
+    "@material-ui/core": "^4.7.2",
+    "@material-ui/icons": "^4.5.1",
     "classnames": "^2.2.6",
+    "clsx": "^1.0.4",
     "lodash": "^4.17.15",
     "react": "16.11.0",
     "react-dom": "^16.11.0"
