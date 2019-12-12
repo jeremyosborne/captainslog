@@ -79,12 +79,11 @@ module.exports = (env, argv) => {
       ],
     },
     output: {
-      chunkFilename: 'captainslog-[name].chunk.js',
-      filename: 'captainslog-[name].js',
+      chunkFilename: '[name].chunk.js',
+      filename: '[name].js',
       path: path.resolve(ROOT_DIR, 'docs'),
-      // If you change this, you better check the HTML template hrefs for anything
-      // that assumes publicPath to be what it is, like the site-header.
-      publicPath: '/',
+      // Removed public path for demo since all things are served relative to hosted location.
+      // publicPath: '/',
     },
     plugins: [
       new CopyPlugin([
