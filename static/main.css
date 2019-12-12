@@ -1,0 +1,63 @@
+/*
+ * Globally applied CSS linked in the resulting html file.
+ *
+ * This file is not processed at build time, use only CSS.
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 16px/1.5 Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+a {
+  color: #2a7ae2;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited, a:active {
+  color: #1756a9;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: list-item;
+  list-style: none;
+  margin-bottom: 0.25rem;
+}
+
+.page-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+@media (max-width: 800px) {
+  .page-content {
+    max-width: auto;
+    padding: 2rem 0.5rem;
+  }
+}
+
+/* Begin site-header.html */
+.site-header {
+  align-content: center;
+  border-top: 5px solid #424242;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 3rem;
+}
+.site-tile {
+  font-size: 1.6rem;
+}
+.site-title, .site-title:visited {
+  color: #424242;
+}
+/* End site-header.html styles. */
